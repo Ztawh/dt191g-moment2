@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "uyExfP12AmxWxIu1DH5u1LsFIwkd0kLGsYOZgAZ13DU=",
+  "Source": "dt191g-moment2-MVC",
+  "BasePath": "_content/dt191g-moment2-MVC",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "dt191g-moment2-MVC/wwwroot",
+      "Source": "dt191g-moment2-MVC",
+      "ContentRoot": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/wwwroot/",
+      "BasePath": "_content/dt191g-moment2-MVC",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/obj/Debug/net6.0/scopedcss/bundle/dt191g-moment2-MVC.styles.css",
+      "SourceId": "dt191g-moment2-MVC",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/obj/Debug/net6.0/scopedcss/bundle/",
+      "BasePath": "_content/dt191g-moment2-MVC",
+      "RelativePath": "dt191g-moment2-MVC.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/obj/Debug/net6.0/scopedcss/bundle/dt191g-moment2-MVC.styles.css"
+    },
+    {
+      "Identity": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/obj/Debug/net6.0/scopedcss/projectbundle/dt191g-moment2-MVC.bundle.scp.css",
+      "SourceId": "dt191g-moment2-MVC",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/obj/Debug/net6.0/scopedcss/projectbundle/",
+      "BasePath": "_content/dt191g-moment2-MVC",
+      "RelativePath": "dt191g-moment2-MVC.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/obj/Debug/net6.0/scopedcss/projectbundle/dt191g-moment2-MVC.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/wwwroot/allGames.json",
+      "SourceId": "dt191g-moment2-MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/wwwroot/",
+      "BasePath": "_content/dt191g-moment2-MVC",
+      "RelativePath": "allGames.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/allGames.json"
+    },
+    {
+      "Identity": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/wwwroot/favicon.ico",
+      "SourceId": "dt191g-moment2-MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/wwwroot/",
+      "BasePath": "_content/dt191g-moment2-MVC",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon.ico"
+    }
+  ]
+}

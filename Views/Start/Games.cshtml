@@ -1,0 +1,39 @@
+@using Microsoft.AspNetCore.SignalR.Protocol
+@model dt191g_moment2_MVC.Models.GamesModel
+@* @model IEnumerable<dt191g_moment2_MVC.Models.GamesModel> *@
+
+@{
+    ViewData["Title"] = "Spel";
+}
+
+<h1>Här listas alla spel</h1>
+
+<div>
+    @foreach (var item in ViewBag.games)
+    {
+        <p>@item.title</p>
+        <p>@item.type</p>
+        <p>@item.price</p>
+    }
+</div>
+
+<div>
+    <h2>Lägg till spel</h2>
+    <form method="post">
+        <div asp-validation-summary="ModelOnly"></div>
+        <label asp-for="title">Titel</label>
+        <input asp-for="title"/>
+        <span asp-validation-for="title"></span>
+
+        <label asp-for="type">Genre</label>
+        <input asp-for="type"/>
+        <span asp-validation-for="type"></span>
+
+        <label asp-for="price">Pris</label>
+        <input asp-for="price"/>
+        <span asp-validation-for="price"></span>
+
+        <input type="submit" value="Lägg till"/>
+    </form>
+</div>
+
