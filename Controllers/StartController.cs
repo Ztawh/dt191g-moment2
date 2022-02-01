@@ -33,8 +33,8 @@ public class StartController : Controller
         ViewBag.games = jsonObj;
         return View();
     }
-
-    [HttpPost]
+    
+    [HttpPost("Spel")]
     public IActionResult Games(GamesModel model)
     {
         if (ModelState.IsValid)

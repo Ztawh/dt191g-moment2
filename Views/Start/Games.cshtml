@@ -4,6 +4,8 @@
 
 @{
     ViewData["Title"] = "Spel";
+    
+    Console.WriteLine(ViewBag);
 }
 
 <h1>Här listas alla spel</h1>
@@ -11,9 +13,9 @@
 <div>
     @foreach (var item in ViewBag.games)
     {
-        <p>@item.title</p>
-        <p>@item.type</p>
-        <p>@item.price</p>
+        <p>@item?.title</p>
+        <p>@item?.type</p>
+        <p>@item?.price</p>
     }
 </div>
 
