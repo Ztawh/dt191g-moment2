@@ -1,41 +1,72 @@
 @using Microsoft.AspNetCore.SignalR.Protocol
 @model dt191g_moment2_MVC.Models.GamesModel
-@* @model IEnumerable<dt191g_moment2_MVC.Models.GamesModel> *@
 
 @{
     ViewData["Title"] = "Spel";
-    
-    Console.WriteLine(ViewBag);
 }
 
+<div>
+    <div>@ViewData["date"]</div>
+</div>
+
 <h1>Här listas alla spel</h1>
+<div class="flex">
+    @* Lista med spel *@
+    <div>
+        @if (ViewBag.games != null)
+        {
+            @foreach (var item in ViewBag.games)
+            {
+                <p>@item?.title</p>
+                <p>@item?.type</p>
+                <p>@item?.price</p>
+            }
+        }
+    </div>
 
-<div>
-    @foreach (var item in ViewBag.games)
-    {
-        <p>@item?.title</p>
-        <p>@item?.type</p>
-        <p>@item?.price</p>
-    }
+    @* Formulär med lägg till spel *@
+    <div>
+        @{
+            var newId = 1;
+            if (ViewBag.games != null)
+            {
+                var index = ViewBag.games.Count - 1;
+                var lastId = ViewBag.games[index];
+                newId = lastId.id + 1;
+            }
+        }
+        <h2>Lägg till spel</h2>
+        <form method="post">
+            <div asp-validation-summary="ModelOnly"></div>
+            <label asp-for="id">ID</label>
+            <input type="number" asp-for="id" value="@newId" readonly/>
+
+            <label asp-for="title">Titel</label>
+            <input type="text" asp-for="title"/>
+            <span asp-validation-for="title"></span>
+            
+            <label asp-for="type">Genre</label>
+            <select asp-for="type">
+                <option value="RPG">RPG</option>
+                <option value="Äventyr">Äventyr</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Plattform">Plattform</option>
+                <option value="Online">Online</option>
+                <option value="FPS">FPS</option>
+            </select>
+            <span asp-validation-for="type"></span>
+
+            <label asp-for="price">Pris</label>
+            <input type="number" asp-for="price"/>
+            <span asp-validation-for="price"></span>
+            
+            <label asp-for="kidFriendly">Barnvänligt</label>
+            <input asp-for="kidFriendly" type="checkbox"/>
+            
+            <input type="submit" value="Lägg till"/>
+        </form>
+    </div>
 </div>
 
-<div>
-    <h2>Lägg till spel</h2>
-    <form method="post">
-        <div asp-validation-summary="ModelOnly"></div>
-        <label asp-for="title">Titel</label>
-        <input asp-for="title"/>
-        <span asp-validation-for="title"></span>
-
-        <label asp-for="type">Genre</label>
-        <input asp-for="type"/>
-        <span asp-validation-for="type"></span>
-
-        <label asp-for="price">Pris</label>
-        <input asp-for="price"/>
-        <span asp-validation-for="price"></span>
-
-        <input type="submit" value="Lägg till"/>
-    </form>
-</div>
+@Html.Partial("_Fruit")
 

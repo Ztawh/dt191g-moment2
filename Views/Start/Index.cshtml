@@ -1,8 +1,11 @@
-﻿@{
+﻿
+
+@{
     ViewData["Title"] = "Startsida";
+    
+    
 }
 <h1>Startsidan</h1>
 <div>
-    <p><b>Dagens datum: @ViewBag.date</b></p>
-    <p><b>Klockan är: </b></p>
+    <p><b>Dagens datum: @ViewData["date"]</b></p>
 </div>
