@@ -5,6 +5,7 @@ namespace dt191g_moment2_MVC.Models;
 
 public class GamesModel
 {
+    [Display(Name = "ID (Ej redigerbar)")]
     public int? id { get; set; }
     
     [Display(Name = "Titel")]
@@ -19,7 +20,7 @@ public class GamesModel
     [Required(ErrorMessage = "Ange ett pris")]
     public int? price { get; set; }
 
-    [Display(Name = "Barnvänligt")]
+    [Display(Name = "Barnvänligt?")]
     public bool kidFriendly { get; set; }
 
 }

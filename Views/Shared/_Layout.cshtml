@@ -7,22 +7,28 @@
     <link rel="stylesheet" href="~/css/main.css"/>
 </head>
 <body>
-<header>
-    @Html.Partial("_Navbar")
-</header>
 <div class="container">
-    <main role="main">
-        @RenderBody()
-    </main>
+    <div class="flex">
+        <header>
+            <h1>SPELDAGS</h1>
+            <div id="logo"><i class="fas fa-gamepad"></i></div>
+            @Html.Partial("_Navbar")
+        </header>
+
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div>
+            &copy; 2022 - dt191g_moment2_MVC
+        </div>
+    </footer>
 </div>
 
-<footer>
-    <div>
-        &copy; 2022 - dt191g_moment2_MVC
-    </div>
-</footer>
-
 <script src="~/js/site.js" asp-append-version="true"></script>
+<script src="https://kit.fontawesome.com/be0f6fe16e.js" crossorigin="anonymous"></script>
 @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

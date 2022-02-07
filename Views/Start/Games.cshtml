@@ -5,27 +5,36 @@
     ViewData["Title"] = "Spel";
 }
 
-<div>
-    <div>@ViewData["date"]</div>
+<div class="date">
+    <div><b>Dagens datum: @ViewData["date"]</b></div>
 </div>
 
-<h1>Här listas alla spel</h1>
+<h2>Alla spel</h2>
 <div class="flex">
     @* Lista med spel *@
-    <div>
+    <div class="games">
         @if (ViewBag.games != null)
         {
+            
             @foreach (var item in ViewBag.games)
             {
-                <p>@item?.title</p>
-                <p>@item?.type</p>
-                <p>@item?.price</p>
+                string kid = "Nej";
+                if (item.kidFriendly)
+                {
+                    kid = "Ja";
+                }
+                <div class="game">
+                    <h4>@item?.title</h4>
+                    <p><b>Genre: </b>@item?.type</p>
+                    <p><b>Pris: </b>@item?.price</p>
+                    <p><b>Barnvänligt: </b>@kid</p>
+                </div>
             }
         }
     </div>
 
     @* Formulär med lägg till spel *@
-    <div>
+    <div class="add-form">
         @{
             var newId = 1;
             if (ViewBag.games != null)
@@ -35,17 +44,17 @@
                 newId = lastId.id + 1;
             }
         }
-        <h2>Lägg till spel</h2>
+        <h3>Lägg till spel</h3>
         <form method="post">
             <div asp-validation-summary="ModelOnly"></div>
-            <label asp-for="id">ID</label>
+            <label asp-for="id"></label>
             <input type="number" asp-for="id" value="@newId" readonly/>
 
-            <label asp-for="title">Titel</label>
+            <label asp-for="title"></label>
             <input type="text" asp-for="title"/>
             <span asp-validation-for="title"></span>
             
-            <label asp-for="type">Genre</label>
+            <label asp-for="type"></label>
             <select asp-for="type">
                 <option value="RPG">RPG</option>
                 <option value="Äventyr">Äventyr</option>
@@ -56,17 +65,21 @@
             </select>
             <span asp-validation-for="type"></span>
 
-            <label asp-for="price">Pris</label>
+            <label asp-for="price"></label>
             <input type="number" asp-for="price"/>
             <span asp-validation-for="price"></span>
             
-            <label asp-for="kidFriendly">Barnvänligt</label>
-            <input asp-for="kidFriendly" type="checkbox"/>
+            <div class="flex kid-field">
+                <label asp-for="kidFriendly"></label>
+                <input asp-for="kidFriendly" type="checkbox"/>
+            </div>
             
-            <input type="submit" value="Lägg till"/>
+            <input type="submit" value="Lägg till" class="btn"/>
         </form>
+        
+        @Html.Partial("_Mascot")
     </div>
 </div>
 
-@Html.Partial("_Fruit")
+
 

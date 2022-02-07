@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zPzDiCVeMTq16vinAq3GygwCKJHjPeQVgYMdSnCPp0s=",
+  "Hash": "UedC8TeGZoAtNqiPHbiN/K2mUQ1/AYzpe88xfIQ+boM=",
   "Source": "dt191g-moment2-MVC",
   "BasePath": "_content/dt191g-moment2-MVC",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/wwwroot/.DS_Store",
+      "SourceId": "dt191g-moment2-MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/wwwroot/",
+      "BasePath": "_content/dt191g-moment2-MVC",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
     {
       "Identity": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/wwwroot/allGames.json",
       "SourceId": "dt191g-moment2-MVC",
@@ -119,12 +136,12 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/wwwroot/orange-logo.png",
+      "Identity": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/wwwroot/thank-you-200px.png",
       "SourceId": "dt191g-moment2-MVC",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/wwwroot/",
       "BasePath": "_content/dt191g-moment2-MVC",
-      "RelativePath": "orange-logo.png",
+      "RelativePath": "thank-you-200px.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,7 +150,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/orange-logo.png"
+      "OriginalItemSpec": "wwwroot/thank-you-200px.png"
     }
   ]
 }

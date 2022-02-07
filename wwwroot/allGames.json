@@ -75,5 +75,12 @@
     "type": "Fantasy",
     "price": 699,
     "kidFriendly": true
+  },
+  {
+    "id": 12,
+    "title": "Animal Crossing",
+    "type": "Äventyr",
+    "price": 499,
+    "kidFriendly": true
   }
 ]

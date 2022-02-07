@@ -1,0 +1,27 @@
+// Normalize CSS
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Fascinate&family=Roboto:ital,wght@0,300;0,500;1,300;1,400&family=Sigmar+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Variables
+//$border-color: #dc0075;
+$header-color: #52c5d0;
+$body-color: #f9f7fc;
+$void: #161617;
+$lighter-void: lighten(#161617, 10);
+$footer-text: #a9eaf1;
+$gradient: linear-gradient(90deg, #52c5d0, #dc0075, #52c5d0);
+$no-edit: #939393;
+
+@mixin desktop {
+  @media screen and (min-width: 800px) {
+    @content;
+  }
+}

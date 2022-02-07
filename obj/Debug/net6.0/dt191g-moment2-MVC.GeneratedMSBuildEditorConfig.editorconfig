@@ -19,12 +19,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/Views/Shared/_Fruit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19GcnVpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/Views/Shared/_Mascot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19NYXNjb3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment2-MVC/Views/Shared/_Navbar.cshtml]

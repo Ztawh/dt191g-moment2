@@ -5,7 +5,17 @@
     
     
 }
-<h1>Startsidan</h1>
-<div>
+<div class="date">
     <p><b>Dagens datum: @ViewData["date"]</b></p>
 </div>
+
+<h2>Välkommen</h2>
+<article class="info">
+    <h3>Speltips för alla</h3>
+    <p>Du har hittat in på en sida för den som älskar spel och är ute efter goa speltips. Du kanske till och med
+        lägger in ditt favoritspel som tips för andra personer som är redo för nästa utmaning. Om så är fallet 
+        är du välkommen att glida in på fliken <a asp-area="" asp-controller="Start" asp-action="Games">Spel</a> för att läsa andras speltips och även lägga in ditt egete speltis.</p>
+    
+    <p>För den som vill leva lite farligt går det att klicka på fliken <a asp-area="" asp-controller="Start" asp-action="GameTip">Speltips</a> då får du ett slumpat speltips!
+        Som en sorts spelroulette för den som inte kan bestämma sig.</p>
+</article>

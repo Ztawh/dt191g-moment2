@@ -11,20 +11,21 @@
     var game = Model[index];
 }
 
-<h1>Speltips!</h1>
-<div>Ingen spelfantasi? Spela @game.title !</div>
-<p>@game.title är ett roligt spel i genren @game.type.ToLower(). Det kostar endast @game.price kr dessutom.</p>
-
-@* @foreach (var item in Model) *@
-@* { *@
-@*     <div>@item.title</div> *@
-@* } *@
-
-<h2>Spelinfo</h2>
-<div>
-    <p><b>Titel: </b> @game.title</p>
-    <p><b>Genre: </b>@game.type</p>
-    <p><b>Pris: </b>@game.price kr</p>
+<h2>Speltips!</h2>
+<div class="info">
+    <p>Ingen spelfantasi? Spela @game.title !</p>
+    <p>@game.title är ett roligt spel i genren @game.type.ToLower(). Det kostar endast @game.price kr dessutom.</p>
 </div>
 
-@Html.Partial("_Fruit")
+<div class="flex game-tip-container">
+    <div class="game-info">
+        <h3>Spelinfo</h3>
+        <div>
+            <p><b>Titel: </b> @game.title</p>
+            <p><b>Genre: </b>@game.type</p>
+            <p><b>Pris: </b>@game.price kr</p>
+        </div>
+    </div>
+
+    @Html.Partial("_Mascot")
+</div>
