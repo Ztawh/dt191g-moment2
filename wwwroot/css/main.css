@@ -9,6 +9,7 @@
 body {
   background: #161617;
   font-family: "Roboto", sans-serif;
+  color: #161617;
 }
 
 .container {
@@ -27,6 +28,12 @@ main {
 @media screen and (min-width: 800px) {
   main {
     width: 750px;
+  }
+}
+@media screen and (max-width: 800px) {
+  main {
+    width: 100%;
+    max-width: 500px;
   }
 }
 
@@ -77,8 +84,24 @@ header #logo {
   text-align: center;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 550px) {
+  header #logo {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
 header i {
   font-size: 5rem;
+}
+@media screen and (max-width: 550px) {
+  header i {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  header {
+    padding: 7rem 1rem 1rem 1rem;
+  }
 }
 
 nav ul {
@@ -92,10 +115,14 @@ nav a {
   transition: 0.2s;
   justify-content: center;
   margin: auto;
+  color: white;
+  font-size: 1.1rem;
 }
 @media screen and (min-width: 800px) {
   nav a:hover {
     background: #f9f7fc;
+    letter-spacing: 1px;
+    color: #161617;
   }
 }
 
@@ -106,16 +133,26 @@ nav a {
 .date {
   position: absolute;
   top: 7rem;
-  right: 0;
+  right: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .games-container {
+    flex-direction: column;
+  }
 }
 
 .games {
   flex: 2;
   padding-right: 2rem;
 }
+@media screen and (max-width: 800px) {
+  .games {
+    padding-right: 0;
+  }
+}
 .games p {
-  padding-left: 0.5rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.3rem;
 }
 
 .add-form {
@@ -124,12 +161,16 @@ nav a {
 
 .game {
   margin-bottom: 2rem;
+  background: white;
 }
 .game h4 {
   background: #161617;
   color: #a9eaf1;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
+}
+.game .game-text {
+  padding: 0.5rem;
 }
 
 form label, form input, form select {
@@ -155,17 +196,16 @@ form .kid-field {
 }
 form .btn {
   padding: 0.5rem;
-  background: none;
-  margin-top: 1rem;
-  border: 10px solid;
-  border-image-slice: 1;
-  border-width: 5px;
-  border-image-source: linear-gradient(90deg, #52c5d0, #dc0075, #52c5d0);
+  background: #52c5d0;
+  color: white;
   transition: 0.3s;
+  border-radius: 20px;
+  border: none;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 800px) {
   form .btn:hover {
-    background-color: #52c5d0;
+    letter-spacing: 1px;
     cursor: pointer;
   }
 }
@@ -187,13 +227,30 @@ form #id {
 
 .game-info {
   flex: 2;
+  text-align: center;
+}
+.game-info p {
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 800px) {
+  .game-info p {
+    font-size: 1rem;
+  }
 }
 
 .game-tip-container {
   margin-top: 2rem;
 }
-.game-tip-container h3 {
+@media screen and (max-width: 600px) {
+  .game-tip-container {
+    flex-direction: column;
+  }
+}
+.game-tip-container h4 {
   margin-bottom: 1rem;
+  background: #161617;
+  color: #a9eaf1;
+  padding: 0.5rem;
 }
 .game-tip-container p {
   margin: 0 0 0.5rem 0.5rem;
@@ -207,6 +264,43 @@ footer {
   padding: 4rem 1rem;
   background: #2f2f31;
   color: #a9eaf1;
+}
+
+@media screen and (max-width: 550px) {
+  .header-main-container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  header {
+    width: 100%;
+    padding: 4rem 1rem 1rem 1rem;
+  }
+  header h1 {
+    font-size: 2.3rem;
+  }
+
+  main {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  main h2 {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+  }
+  main h3 {
+    font-size: 1.5rem;
+  }
+  main .info {
+    padding: 0.5rem;
+  }
+
+  .date {
+    top: 1rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

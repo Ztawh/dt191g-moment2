@@ -6,24 +6,35 @@
         
     if (Model != null)
     {
+        // Get random number not higher than the number of games
         index = new Random().Next(Model.Count());
     }
     var game = Model[index];
+    
+    // Check if kid friendly
+    string kid = "Nej";
+    if (game.kidFriendly)
+    {
+        kid = "Ja";
+    }
 }
 
-<h2>Speltips!</h2>
+<h2>Speltips</h2>
 <div class="info">
-    <p>Ingen spelfantasi? Spela @game.title !</p>
-    <p>@game.title är ett roligt spel i genren @game.type.ToLower(). Det kostar endast @game.price kr dessutom.</p>
+    <h3>Spela @game.title</h3>
+    <p>@game.title är ett roligt spel i genren @game.type. Det kostar endast @game.price kr dessutom. 
+        Du hittar övrig information om spelet nedan. Ha så kul!</p>
 </div>
 
 <div class="flex game-tip-container">
+    
     <div class="game-info">
-        <h3>Spelinfo</h3>
+        <h4>Spelinfo</h4>
         <div>
             <p><b>Titel: </b> @game.title</p>
             <p><b>Genre: </b>@game.type</p>
             <p><b>Pris: </b>@game.price kr</p>
+            <p><b>Barnvänligt: @kid</b></p>
         </div>
     </div>
 

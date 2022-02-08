@@ -18,6 +18,7 @@ public class GamesModel
     
     [Display(Name = "Pris")]
     [Required(ErrorMessage = "Ange ett pris")]
+    [Range(1, 9999)]
     public int? price { get; set; }
 
     [Display(Name = "Barnvänligt?")]

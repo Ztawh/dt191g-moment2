@@ -30,14 +30,14 @@
   {
     "id": 5,
     "title": "Shadow of the Colossus",
-    "type": "Action äventyr, pussel",
+    "type": "Äventyr",
     "price": 299,
     "kidFriendly": true
   },
   {
     "id": 6,
     "title": "Mario Odyssey",
-    "type": "Plattform, äventyr",
+    "type": "Plattform",
     "price": 499,
     "kidFriendly": true
   },
@@ -46,41 +46,6 @@
     "title": "Final Fantasy VII",
     "type": "RPG",
     "price": 49,
-    "kidFriendly": true
-  },
-  {
-    "id": 8,
-    "title": "Test",
-    "type": "test",
-    "price": 12,
-    "kidFriendly": true
-  },
-  {
-    "id": 9,
-    "title": "test igen",
-    "type": "test igen",
-    "price": 333,
-    "kidFriendly": true
-  },
-  {
-    "id": 10,
-    "title": "Dark Souls",
-    "type": "rpg",
-    "price": 699,
-    "kidFriendly": false
-  },
-  {
-    "id": 11,
-    "title": "mjao",
-    "type": "Fantasy",
-    "price": 699,
-    "kidFriendly": true
-  },
-  {
-    "id": 12,
-    "title": "Animal Crossing",
-    "type": "Äventyr",
-    "price": 499,
     "kidFriendly": true
   }
 ]

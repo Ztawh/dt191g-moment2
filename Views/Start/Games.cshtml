@@ -10,12 +10,11 @@
 </div>
 
 <h2>Alla spel</h2>
-<div class="flex">
+<div class="flex games-container">
     @* Lista med spel *@
     <div class="games">
         @if (ViewBag.games != null)
         {
-            
             @foreach (var item in ViewBag.games)
             {
                 string kid = "Nej";
@@ -25,9 +24,11 @@
                 }
                 <div class="game">
                     <h4>@item?.title</h4>
-                    <p><b>Genre: </b>@item?.type</p>
-                    <p><b>Pris: </b>@item?.price</p>
-                    <p><b>Barnvänligt: </b>@kid</p>
+                    <div class="game-text">
+                        <p><b>Genre: </b>@item?.type</p>
+                        <p><b>Pris: </b>@item?.price</p>
+                        <p><b>Barnvänligt: </b>@kid</p>
+                    </div>
                 </div>
             }
         }
@@ -61,6 +62,7 @@
                 <option value="Fantasy">Fantasy</option>
                 <option value="Plattform">Plattform</option>
                 <option value="Online">Online</option>
+                <option value="Relation">Relation</option>
                 <option value="FPS">FPS</option>
             </select>
             <span asp-validation-for="type"></span>
@@ -80,6 +82,3 @@
         @Html.Partial("_Mascot")
     </div>
 </div>
-
-
-

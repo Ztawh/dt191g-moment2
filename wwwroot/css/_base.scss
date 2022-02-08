@@ -25,3 +25,22 @@ $no-edit: #939393;
     @content;
   }
 }
+
+@mixin tablet {
+  @media screen and (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin small-tablet {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+
+@mixin mobile {
+  @media screen and (max-width: 550px) {
+    @content;
+  }
+}
