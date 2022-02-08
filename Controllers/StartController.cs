@@ -37,6 +37,7 @@ public class StartController : Controller
         var jsonObj = JsonConvert.DeserializeObject<IEnumerable<GamesModel>>(jsonData);
         ViewBag.games = jsonObj;
 
+        // Hämta cookie
         var cookie = HttpContext.Request.Cookies["date"];
         ViewData["date"] = cookie;
         return View();

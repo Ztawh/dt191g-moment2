@@ -47,5 +47,12 @@
     "type": "RPG",
     "price": 49,
     "kidFriendly": true
+  },
+  {
+    "id": 8,
+    "title": "Animal Crossing",
+    "type": "Relation",
+    "price": 399,
+    "kidFriendly": true
   }
 ]

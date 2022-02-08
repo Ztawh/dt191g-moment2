@@ -5,6 +5,7 @@
     ViewData["Title"] = "Spel";
 }
 
+@* Hämta datum *@
 <div class="date">
     <div><b>Dagens datum: @ViewData["date"]</b></div>
 </div>
@@ -37,6 +38,7 @@
     @* Formulär med lägg till spel *@
     <div class="add-form">
         @{
+            // Generera ett ID som är +1 från det sista IDt
             var newId = 1;
             if (ViewBag.games != null)
             {
